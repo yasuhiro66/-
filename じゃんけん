@@ -1,0 +1,48 @@
+import random
+
+print('じゃんけんスタート')
+
+print('自分の手を入力してください')
+my_hand = int(input('0:グー, 1:チョキ, 2:パー'))
+# you_hand = random.randint(0, 2)
+you_hand = random.randrange(0, 2)
+
+if int(my_hand) == 0:
+    print("あなたの手:グー")
+elif int(my_hand) == 1:
+    print("あなたの手:ちょき")
+elif int(my_hand) == 2:
+    print("あなたの手:パー")
+else:
+    print("0～2を入力をしてください。")
+
+
+if int(you_hand) == 0:
+    print("相手の手:グー")
+elif int(you_hand) == 1:
+    print("相手の手:ちょき")
+elif int(you_hand) == 2:
+    print("相手の手:パー")
+
+print("結果：")
+if my_hand == 0:
+    if you_hand == 0:
+        print('あいこ')
+    elif you_hand == 1:
+        print('勝ち')
+    elif you_hand == 2:
+        print("負け")
+elif my_hand == 1:
+    if you_hand == 0:
+        print('負け')
+    elif you_hand == 1:
+        print('あいこ')
+    elif you_hand == 2:
+        print("勝ち")
+elif my_hand == 2:
+    if you_hand == 0:
+        print("負け")
+    elif  you_hand == 1:
+        print("勝ち")
+    elif you_hand == 2:
+        print("あいこ")
