@@ -46,3 +46,5 @@ elif my_hand == 2:
         print("勝ち")
     elif you_hand == 2:
         print("あいこ")
+        
+        
